@@ -15,14 +15,13 @@ function countLetters(sentence){
   for( var i = 0; i < sentence.length; i++){
 
     //create a key to organize letters
-    if(sentence[i] != ' '){
-      var key = sentence[i];
-    }
+    var key = sentence[i];
+
 
     if( letters[key] == undefined){
-      letters[key] = 1;
+      letters[key] = [i];
     } else {
-      letters[key] += 1;
+      letters[key].push(i);
     }
 
   }
