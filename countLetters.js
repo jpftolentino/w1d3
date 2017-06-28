@@ -11,7 +11,7 @@ function countLetters(sentence){
   //create letters object
   var letters = {};
 
-  //find all unique letters and turn them into leys
+  //find all unique letters and turn them into keys
   for( var i = 0; i < sentence.length; i++){
 
     //create a key to organize letters
